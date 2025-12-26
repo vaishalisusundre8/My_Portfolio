@@ -31,28 +31,15 @@ function Contact() {
       <div className="container container-lg px-3 px-md-4">
         <div className="row justify-content-center align-items-center gy-5">
 
-          {/* CONTACT INFO */}
+        
           <div className="col-12 col-md-5 col-lg-4">
             <div className="p-4 p-md-5 rounded-4 border border-light border-opacity-25 bg-dark bg-opacity-10 text-center text-md-start">
-
               <h3 className="fw-bold mb-4">Get In Touch</h3>
 
               {[
-                {
-                  icon: "envelope-fill",
-                  title: "Email",
-                  value: "vaishalisusundre2297@gmail.com",
-                },
-                {
-                  icon: "telephone-fill",
-                  title: "Phone",
-                  value: "+91 8698282297",
-                },
-                {
-                  icon: "geo-alt-fill",
-                  title: "Location",
-                  value: "Chh. Sambhajinagar, Maharashtra",
-                },
+                { icon: "envelope-fill", title: "Email", value: "vaishalisusundre2297@gmail.com" },
+                { icon: "telephone-fill", title: "Phone", value: "+91 8698282297" },
+                { icon: "geo-alt-fill", title: "Location", value: "Chh. Sambhajinagar, Maharashtra" },
               ].map((item, index) => (
                 <div key={index} className="d-flex flex-column flex-sm-row gap-3 mb-4 align-items-center align-items-sm-start">
                   <i className={`bi bi-${item.icon} fs-4 text-info`}></i>
@@ -72,75 +59,89 @@ function Contact() {
                   <i className="bi bi-linkedin"></i>
                 </a>
               </div>
-
             </div>
           </div>
 
-          {/* CONTACT FORM */}
+          
           <div className="col-12 col-md-6 col-lg-5">
-            <form
-              onSubmit={handleSubmit}
-              className="p-4 p-md-5 rounded-4 border border-light border-opacity-25 bg-dark bg-opacity-10"
-            >
-              <h3 className="fw-bold text-center mb-4">
-                Connect With Me 🚀
-              </h3>
+          <form
+            onSubmit={handleSubmit}
+            className="p-4 p-md-5 rounded-4 border border-light border-opacity-25 bg-dark bg-opacity-10"
+          >
+            <h3 className="fw-bold text-center mb-4">Connect With Me</h3>
 
+            <div className="form-floating mb-3">
               <input
                 type="email"
                 name="email"
-                className="form-control mb-3 py-3 bg-dark text-light border-secondary rounded-3"
+                className="form-control bg-dark text-light border-secondary"
+                id="floatingEmail"
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
+              <label htmlFor="floatingEmail" className="text-secondary">Your Email</label>
+            </div>
 
+            <div className="form-floating mb-3">
               <input
                 type="text"
                 name="name"
-                className="form-control mb-3 py-3 bg-dark text-light border-secondary rounded-3"
+                className="form-control bg-dark text-light border-secondary"
+                id="floatingName"
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
                 required
               />
+              <label htmlFor="floatingName" className="text-secondary">Your Name</label>
+            </div>
 
+            <div className="form-floating mb-3">
               <input
                 type="text"
                 name="subject"
-                className="form-control mb-3 py-3 bg-dark text-light border-secondary rounded-3"
+                className="form-control bg-dark text-light border-secondary"
+                id="floatingSubject"
                 placeholder="Subject"
                 value={formData.subject}
                 onChange={handleChange}
                 required
               />
+              <label htmlFor="floatingSubject" className="text-secondary">Subject</label>
+            </div>
 
+            <div className="form-floating mb-4">
               <textarea
                 name="message"
-                rows="4"
-                className="form-control mb-4 py-3 bg-dark text-light border-secondary rounded-3"
+                className="form-control bg-dark text-light border-secondary"
                 placeholder="Message"
+                id="floatingMessage"
+                style={{ height: "120px" }}
                 value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
+              <label htmlFor="floatingMessage" className="text-secondary">Message</label>
+            </div>
 
-              <button
-                type="submit"
-                className="btn w-100 fw-semibold py-3 fs-5 rounded-3 text-white"
-                style={{ background: "linear-gradient(90deg, #a855f7, #ec4899)" }}
-              >
-                Send Message
-              </button>
+            <button
+              type="submit"
+              className="btn w-100 fw-semibold py-3 fs-5 rounded-3 text-white"
+              style={{ background: "linear-gradient(90deg, #a855f7, #ec4899)" }}
+            >
+              Send Message
+            </button>
 
-              {success && (
-                <div className="alert alert-success mt-4 text-center">
-                  Message sent successfully!
-                </div>
-              )}
-            </form>
-          </div>
+            {success && (
+              <div className="alert alert-success mt-4 text-center">
+                Message sent successfully!
+              </div>
+            )}
+          </form>
+        </div>
+
 
         </div>
       </div>
