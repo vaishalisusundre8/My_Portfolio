@@ -61,7 +61,7 @@ function Home() {
       <div className="container position-relative z-1">
         <div className="row align-items-center gy-5">
 
-          {/* IMAGE */}
+        
           <div className="col-12 col-lg-6 text-center">
             <div
               className="mx-auto rounded-circle d-flex align-items-center justify-content-center"
@@ -85,7 +85,7 @@ function Home() {
             </div>
           </div>
 
-          {/* TEXT */}
+          
           <div className="col-12 col-lg-6 text-center text-lg-start">
 
             <h4 className="fw-medium text-secondary mb-2 fs-1">

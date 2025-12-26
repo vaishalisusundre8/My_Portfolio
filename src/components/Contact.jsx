@@ -129,7 +129,9 @@ function Contact() {
             <button
               type="submit"
               className="btn w-100 fw-semibold py-3 fs-5 rounded-3 text-white"
-              style={{ background: "linear-gradient(90deg, #a855f7, #ec4899)" }}
+             style={{
+                  background: "linear-gradient(90deg, #0dcaf0, #6f42c1)",
+                }}
             >
               Send Message
             </button>
