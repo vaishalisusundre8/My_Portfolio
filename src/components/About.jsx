@@ -22,10 +22,10 @@ function About() {
           continuously growing as a developer.
         </p>
 
-        {/* SKILLS GRID */}
+      
         <div className="row g-4 mb-5">
 
-          {/* FRONTEND */}
+          
           <div className="col-12 col-md-6">
             <div className="p-4 rounded-4 h-100 border border-light border-opacity-25">
               <h4 className="text-center fw-bold fs-3 mb-4">Frontend</h4>
@@ -39,7 +39,7 @@ function About() {
             </div>
           </div>
 
-          {/* BACKEND */}
+         
           <div className="col-12 col-md-6">
             <div className="p-4 rounded-4 h-100 border border-light border-opacity-25">
               <h4 className="text-center fw-bold fs-3 mb-4">Backend</h4>
@@ -53,7 +53,7 @@ function About() {
             </div>
           </div>
 
-          {/* LANGUAGES */}
+        
           <div className="col-12 col-md-6">
             <div className="p-4 rounded-4 h-100 border border-light border-opacity-25">
               <h4 className="text-center fw-bold fs-3 mb-4">Languages</h4>
@@ -67,7 +67,7 @@ function About() {
             </div>
           </div>
 
-          {/* TOOLS */}
+         
           <div className="col-12 col-md-6">
             <div className="p-4 rounded-4 h-100 border border-light border-opacity-25">
               <h4 className="text-center fw-bold fs-3 mb-4">Tools</h4>
@@ -82,7 +82,7 @@ function About() {
           </div>
         </div>
 
-        {/* TIMELINE */}
+       
         <div className="mt-5">
           <h3 className="text-center fw-bold display-6 mb-5">
             My <span className="text-info">Journey</span>
